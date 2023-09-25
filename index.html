@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: #F55555;
+        }
+
+        p {
+            font-size: 18px;
+            color: #360940;
+            padding: 20px;
+        }
+
+        .available {
+            margin: 20px;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            background-color: #4C83FF;
+        }
+        .locked{
+            margin: 20px;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+
+            border-radius: 4px;
+            background-color: gray;
+        }
+        .available:hover {
+            background-color: #123597;
+        }
+        .available:active {
+            background-color: #123597;
+        }.available:visited {
+            background-color: #58627e;
+        }
+        .center{
+            text-align: center;
+        }
+        .links{
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <h1>Welcome Here</h1>
+        <p>Each day, a new module will become unlocked for you to explore. To get started, simply click on the module that
+            is currently available. Take your time to thoroughly absorb the content, engage in practice exercises, and
+            explore examples. When you feel confident in your mastery of the material, you can initiate the quiz, which
+            becomes available upon completing the lessons. Enjoy your learning journey!</p>
+            
+        <div class="links">
+            <a href="/module-1/index.html" class="available">Go to Module 1</a>
+            <a href="#" class="locked">Go to Module 2</a>
+            <a href="#" class="locked">Go to Module 3</a>
+            <a href="#" class="locked">Go to Module 4</a>
+            <a href="#" class="locked">Go to Module 5</a>
+            <a href="#" class="locked">Go to Module 6</a>
+        </div>
+    </div>
+</body>
+
+</html>
