@@ -58,6 +58,7 @@ li{
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     margin-top: 40px;
+    margin: 20px;
 }
 .notice{
     border: 2px solid rgb(95, 216, 58);
@@ -147,4 +148,47 @@ tr:hover {
 
 .inner-table th, .inner-table td {
     padding: 8px 10px;
+}
+.Assigment{
+    background-color: white;
+    margin: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.Assigment h4{
+    margin-bottom: 10px;
+}
+.Assigment p{
+    margin-bottom: 20px;
+}
+
+#upload-form{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.button{
+    background-color: black;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+#upload-form input{
+    background-color: rgb(212, 212, 212);
+    padding: 5px;
+    margin-bottom: 4px;
+}
+#confirmation-message {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    
 }
