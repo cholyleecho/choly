@@ -20,10 +20,78 @@
             First you have to download the vsCode.To Download Vscode <a href="https://code.visualstudio.com/download">Click me</a>. Next you have install live server extension in your vs code. to install this extension <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Follow Me</a>
         </p>
         <p class="notice">To Learn these topics you can refer <a href="https://wildlearner.com/learn/course/html/">wildlearner</a>, <a href="https://www.programiz.com/html">programiz</a>, and <a href="https://www.w3schools.com/html/default.asp">w3schools</a></p>
+
+        <div class="result">
+            <h1>Module Results</h1>
+            <table>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Results</th>
+                </tr>
+                <tr>
+                    <td>Abdul Rahim</td>
+                    <td>
+                        <table class="inner-table">
+                            <tr>
+                                <th>Quiz</th>
+                                <th>Marks (%)</th>
+                            </tr>
+                            <tr>
+                                <td>Module 1</td>
+                                <td>68%</td>
+                            </tr>
+                            <!-- <tr>
+                                <td>Test 2</td>
+                                <td>90%</td>
+                            </tr> -->
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ali Hasnain</td>
+                    <td>
+                        <table class="inner-table">
+                            <tr>
+                                <th>Quiz</th>
+                                <th>Marks (%)</th>
+                            </tr>
+                            <tr>
+                                <td>Module 1</td>
+                                <td>Not Attempted</td>
+                            </tr>
+                            <!-- <tr>
+                                <td>Test 2</td>
+                                <td>88%</td>
+                            </tr> -->
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tehzeeb Hassan</td>
+                    <td>
+                        <table class="inner-table">
+                            <tr>
+                                <th>Quiz</th>
+                                <th>Marks (%)</th>
+                            </tr>
+                            <tr>
+                                <td>Module 1</td>
+                                <td>68%</td>
+                            </tr>
+                            <!-- <tr>
+                                <td>Test 2</td>
+                                <td>85%</td>
+                            </tr> -->
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        </div>
         <div class="modules">
             <div class="box">
-                <h2>Module - 1</h2>
-                <p>Content of the Day</p>
+                <h2 class="heading">Module - 1</h2>
+                <p class="sub-heading">Content of the Day</p>
                 <ul>
                     <li>What is Html?</li>
                     <li>A brief history of different versions of html</li>
@@ -49,15 +117,36 @@
                         <li><code>&lt;ins&gt;</code></li>
                     </ul>
                 </ul><br>
-                <a href="/choly/module-1-quiz/index.html" class="btn">Go to Quiz</a>
+                <a  class="btn expire" id="myButton" aria-disabled="true">Go to Quiz</a>
             </div>
-            <div class="box">
-                <h2>Module - 2</h2>
-                <p>Will be available tomorrow.</p>
+            <div class="box" id="myElement" >
+                <div id="hiddenContent" style="display: none;">
+                    <h2 class="heading">Module - 2</h2>
+                    <p class="sub-heading">Content of the day.</p>
+                    <ul>
+                        <li>What are attributes</li>
+                        <li>Where to write Attributes in html tags.</li>
+                        <li>Explore some Attributes for html tags.</li>
+                        <li>Understading of some major used attributes</li>
+                        <ul>
+                            <li>title</li>
+                            <li>class</li>
+                            <li>id</li>
+                            <li>style</li>
+                        </ul>
+                        <li>In style attribute must know about color, background-color, font-size and font-weight.</li>
+                        <li>When to use id and when to use class</li>
+                        <li>Practise in Vscode</li>
+                    </ul><br>
+                    <a href="/choly/module-2-quiz/index.html" class="btn" id="myButton">Go to Quiz</a>
+                </div>
+                <div id="message">This content will be available at 9 AM 9/29/2023. Please wait...</div>
                 
             </div>
+            
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
