@@ -32,3 +32,40 @@ function checkContentStatus() {
 
 // Call the function to check the content status when the page loads
 checkContentStatus();
+
+
+// .......................................................FileStack
+// .......................................................FileStack
+// Initialize Filestack with your API key
+const client = filestack.init('AcOufZ8PbTEyEsFaNTvu5z');
+
+// Get references to HTML elements
+const uploadForm = document.getElementById('upload-form');
+const fileInput = document.getElementById('file-input');
+
+// Add an event listener to the form for file uploads
+uploadForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  
+  // Get the selected file
+  const file = fileInput.files[0];
+  
+  if (file) {
+    // Use Filestack to upload the file
+    client.upload(file).then((result) => {
+      // Hide the file input and display the confirmation message
+      fileInput.style.display = 'none';
+      document.getElementById('confirmation-message').style.display = 'block';
+
+      // Handle the successful upload, you can get the file URL from result.url
+      console.log('File uploaded:', result.url);
+    }).catch((error) => {
+      // Handle any errors
+      console.error('Error uploading file:', error);
+    });
+  }
+});
+
+// .......................................................FileStack
+// .......................................................FileStack
+
