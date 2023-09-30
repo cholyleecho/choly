@@ -34,38 +34,16 @@ function checkContentStatus() {
 checkContentStatus();
 
 
-// .......................................................FileStack
-// .......................................................FileStack
-// Initialize Filestack with your API key
-const client = filestack.init('AcOufZ8PbTEyEsFaNTvu5z');
+// .......................................................Upload system
+// .......................................................Upload system
 
-// Get references to HTML elements
-const uploadForm = document.getElementById('upload-form');
-const fileInput = document.getElementById('file-input');
+function openGmail(email) {
+  var subject = encodeURIComponent('Assingment No 1');
+  var body = encodeURIComponent('Upload screenshot or pdf with code and output');
 
-// Add an event listener to the form for file uploads
-uploadForm.addEventListener('submit', (e) => {
-  e.preventDefault();
+  var gmailComposeURL = 'https://mail.google.com/mail/u/0/?view=cm&fs=1&to=' + email + '&su=' + subject + '&body=' + body;
   
-  // Get the selected file
-  const file = fileInput.files[0];
-  
-  if (file) {
-    // Use Filestack to upload the file
-    client.upload(file).then((result) => {
-      // Hide the file input and display the confirmation message
-      fileInput.style.display = 'none';
-      document.getElementById('confirmation-message').style.display = 'block';
-
-      // Handle the successful upload, you can get the file URL from result.url
-      console.log('File uploaded:', result.url);
-    }).catch((error) => {
-      // Handle any errors
-      console.error('Error uploading file:', error);
-    });
-  }
-});
-
-// .......................................................FileStack
-// .......................................................FileStack
-
+  window.open(gmailComposeURL, '_blank');
+}
+// .......................................................Upload system
+// .......................................................Upload system

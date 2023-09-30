@@ -94,13 +94,8 @@
             <p>You have to use the tags in module 1 and upload the picture of your code in vscode and the output on the browser.</p>
             <p class="notice">When select the file then click on upload button and wait for confirmation-message</p>
             <!-- <a href="style.css" download class="button">Download</a> -->
-            <form id="upload-form">
-                <input type="file" id="file-input" >
-                <button type="submit" class="button">Upload File</button>
-            </form>
-            <div id="confirmation-message" >
-                File uploaded successfully!
-            </div>
+            
+            <button onclick="openGmail('cholyleecho@gmail.com')" class="button">Compose Email</button>
         </div>
 <!-- -----------------------------------modules----------------------------------- -->
 
@@ -136,7 +131,7 @@
                 <a  class="btn expire" id="myButton" aria-disabled="true">Go to Quiz</a>
             </div>
             <div class="box" id="myElement" >
-                <div >
+                <div id="hiddenContent" style="display: none;">
                     <h2 class="heading">Module - 2</h2>
                     <p class="sub-heading">Content of the day.</p>
                     <ul>
@@ -156,7 +151,7 @@
                     </ul><br>
                     <a href="/choly/module-2-quiz/index.html" class="btn" id="myButton">Go to Quiz</a>
                 </div>
-                <!-- <div id="message">This content will be available at 9 AM 9/29/2023. Please wait...</div> -->
+                <div id="message">This content will be available at 9 AM 9/29/2023. Please wait...</div>
                 
             </div>
             
