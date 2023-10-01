@@ -1,49 +1,39 @@
-// Get the elements by their IDs
-const hiddenContent = document.getElementById('hiddenContent');
-const message = document.getElementById('message');
+// Function to show/hide project categories
+function showTabs(category) {
+    const tabContents = document.querySelectorAll(".tabcontent");
+    const tabLinks = document.querySelectorAll(".tablinks");
 
-// Define the specific start time for tomorrow (9 AM)
-const startTime = new Date();
-startTime.setDate(startTime.getDate() + 1); // Set to tomorrow
-startTime.setHours(9, 0, 0); // Set to 9:00:00 AM tomorrow
+    // Hide all tab contents
+    tabContents.forEach((content) => {
+        content.style.display = "none";
+    });
 
-// Function to check if the content should be displayed and update visibility accordingly
-function checkContentStatus() {
-    const currentTime = new Date();
+    // Remove 'active' class from all tab links
+    tabLinks.forEach((link) => {
+        link.classList.remove("active");
+    });
 
-    if (currentTime >= startTime) {
-        // Show the actual content and hide the message
-        hiddenContent.style.display = 'block';
-        message.style.display = 'none';
-    } else {
-        // Hide the actual content and show the message
-        hiddenContent.style.display = 'none';
-        message.style.display = 'block';
-        
-        // Calculate the time remaining until the start time
-        const timeRemaining = startTime - currentTime;
+    // Show the selected category
+    document.getElementById(category).style.display = "block";
 
-        // Schedule a page reload when the start time arrives
-        setTimeout(function () {
-            location.reload();
-        }, timeRemaining);
-    }
+    // Add 'active' class to the clicked tab link
+    event.currentTarget.classList.add("active");
 }
 
-// Call the function to check the content status when the page loads
-checkContentStatus();
-
+// Set the default tab to "All Projects" on page load
+document.querySelector(".tablinks.active").click();
 
 // .......................................................Upload system
 // .......................................................Upload system
 
 function openGmail(email) {
-  var subject = encodeURIComponent('Assingment No 1');
-  var body = encodeURIComponent('Upload screenshot or pdf with code and output');
-
-  var gmailComposeURL = 'https://mail.google.com/mail/u/0/?view=cm&fs=1&to=' + email + '&su=' + subject + '&body=' + body;
+    var subject = encodeURIComponent('Assingment No 1');
+    var body = encodeURIComponent('Upload screenshot or pdf with code and output');
   
-  window.open(gmailComposeURL, '_blank');
-}
-// .......................................................Upload system
-// .......................................................Upload system
+    var gmailComposeURL = 'https://mail.google.com/mail/u/0/?view=cm&fs=1&to=' + email + '&su=' + subject + '&body=' + body;
+    
+    window.open(gmailComposeURL, '_blank');
+  }
+  // .......................................................Upload system
+  // .......................................................Upload system
+  

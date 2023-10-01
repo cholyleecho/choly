@@ -1,121 +1,272 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-.container{
-    margin: 40px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    padding: 40px;
-}
-.container h1{
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 3rem;
-}
-.description{
-    width: 70%;
-    margin: 0 auto;
-    padding-bottom: 40px;
-    font-size: 1.3rem;
-}
-.box{
-    /* border: 1px solid blue; */
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    padding: 70px;
-    background-color: white;
-}
-.expire{
-    background-color: gray !important;
-}
-.heading{
-    margin-bottom: 20px;
-    font-size: 2rem;
-}
-.sub-heading{
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-li{
-    line-height: 1.2;
-    font-size: 1.1rem;
-}
-.btn{
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: black;
-    color: white;
-    margin: 60px 20px;
-}
-.btn:hover{
-    background-color: rgb(17, 17, 17);
-}
-.modules{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-top: 40px;
-    margin: 20px;
-}
-.notice{
-    border: 2px solid rgb(95, 216, 58);
-    background-color: rgb(186, 240, 186);
-    padding: 15px;
-    line-height: 1.4;
-    margin: 10px;
-}
-@media screen and (max-width:768px) {
-    .modules{
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-@media screen and (max-width:425px) {
-    .box{
-        padding: 20px;
-    }
-    .container{
-        margin: 10px;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        padding: 10px;
-    }
-    .container h1{
-        text-align: center;
-        margin-bottom: 30px;
-        font-size: 2.5rem;
-    }
-    .description{
-        width: 95%;
-        margin: 0 auto;
-        padding-bottom: 40px;
-        font-size: 1rem;
-    }
-    .box ul li{
-        margin-left: 10px;
-    }
-}
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
-}
-
-.result{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
     background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: linear-gradient(to right, #FD6E6A, #FFC600) #f4f4f4;
+    /* Firefox */
 }
 
-h1 {
+a {
+    color: #000;
+}
+
+:root {
+    --main-color: #FFC600;
+    --second-color: #FA742B;
+}
+
+.color {
+    background: linear-gradient(45deg, var(--second-color), var(--main-color));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.notice {
+    margin: 10px 100px;
+    border: 1px solid var(--main-color);
+    background-color: #ffc8004d;
+    display: inline-block;
+    padding: 10px;
+}
+
+.notice a {
+    color: var(--second-color);
+}
+
+/*----------------------------------------------- header -----------------------------------------------*/
+
+.header {
+    background: linear-gradient(45deg, var(--second-color), var(--main-color));
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 100px;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+
+/* ----------------------------------------HERO SECTION------------------------------------ */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: #333; */
+    color: black;
+    /* padding: 50px; */
+    /* margin-top: 100px; */
+    width: 100%;
+}
+
+.left-hero {
+    flex: 1;
+    padding-right: 20px;
+    /* background-color: red; */
+    padding-left: 80px;
+
+}
+
+.right-hero {
+    flex: 1;
     text-align: center;
-    color: #333;
+    /* background-color: yellow; */
+}
+
+.hero-heading {
+    font-size: 4.5rem;
+    margin-bottom: 30px;
+    /* color: #FFC600; */
+}
+
+.hero-paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    /* color: #333; */
+}
+
+.hero-image {
+    max-width: 100%;
+    /* Make sure it's responsive */
+    height: auto;
+    max-height: 450px;
+    border-radius: 8px;
+}
+
+
+/* ------------------------------------TAbed------------------------------------- */
+.tabed {}
+
+/* Style for tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    width: 700px;
+    margin-bottom: 30px;
+
+}
+
+.tablinks {
+    width: calc(700px /3);
+    /* Set the width of each tab to 200px */
+    background: var(--main-color);
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: background 0.3s;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    /* Center the text inside the tab */
+}
+
+.tablinks:hover {
+    background-color: var(--second-color);
+}
+
+.tablinks.active {
+    background-color: var(--second-color);
+}
+
+/* Style for tab content */
+.tabcontent {
+    display: none;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+/* ------------------------------------modules------------------------------------- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px;
+    /* Adjusted margin property */
+}
+
+.module {
+    /* background-color: olivedrab; */
+    border: 1px solid var(--main-color);
+    padding: 20px;
+}
+
+.module:hover {
+    border: 1px solid var(--second-color);
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.sub-heading {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------------Assignment------------------------------------- */
+#Assignments {
+    /* background-color:  red; */
+    padding: 0 50px;
+}
+
+#Assignments p {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.assignment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px;
+}
+
+.assignment-modal {
+    border: 1px solid var(--main-color);
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.assignment-modal button {
+    margin-top: 10px;
+}
+
+.assignment-modal:hover {
+    border: 1px solid var(--second-color);
+}
+
+.assignment-modal h4 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn {
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    background-color: var(--main-color);
+    outline: none;
+    transition: all ease 0.2s;
+    cursor: pointer;
+    margin: 1px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover {
+    background-color: var(--second-color);
+
+}
+
+.btn i {
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+/* ------------------------------------Results------------------------------------- */
+.result {
+    margin: 10px 100px;
 }
 
 table {
@@ -124,13 +275,14 @@ table {
     margin-top: 20px;
 }
 
-th, td {
+th,
+td {
     padding: 12px 15px;
     text-align: left;
 }
 
 th {
-    background-color: #333;
+    background: var(--second-color);
     color: #fff;
 }
 
@@ -139,58 +291,128 @@ tr:nth-child(even) {
 }
 
 tr:hover {
-    background-color: #ddd;
+    background-color: #ffc8004d;
 }
 
 .inner-table {
     width: 100%;
 }
 
-.inner-table th, .inner-table td {
-    padding: 8px 10px;
-}
-.Assigment{
-    background-color: white;
-    margin: 40px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    position: relative;
-}
-.Assigment h4{
-    margin-bottom: 10px;
-}
-.Assigment p{
-    margin-bottom: 20px;
+.inner-table th,
+.inner-table td {
+    padding: 8px;
 }
 
-#upload-form{
-    margin-top: 20px;
-    padding: 10px;
-}
-
-.button{
-    background-color: black;
-    padding: 5px;
-    text-decoration: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-#upload-form input{
-    background-color: rgb(212, 212, 212);
-    padding: 5px;
-    margin-bottom: 4px;
-}
-#confirmation-message {
-    display: none;
-    background-color: #4CAF50;
-    color: white;
+/* ------------------------------------footer------------------------------------- */
+footer {
     text-align: center;
-    padding: 10px;
-    margin-top: 10px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    
+    padding: 10px 0;
+    background-color: var(--second-color);
+    color: white;
+    border-top: 1px solid var(--second-color);
 }
+
+@media screen and (max-width : 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .assignment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-hero,
+    .right-hero {
+        padding: 0;
+        flex: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width : 425px) {
+    .tabs {
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .tablinks {
+        width: calc(100% /3);
+    }
+
+    .notice {
+        margin: 20px;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+
+    .hero-heading {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-paragraph {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .assignment-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #Assignments {
+        padding: 0 10px;
+    }
+
+    #Assignments p {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .result {
+        margin: 0 10px;
+    }
+
+    .btn {
+        font-size: 13px;
+    }
+}
+
+/* --------------------------------Custom scroll bar--------------------------------*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #FFC600,#FD6E6A );
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f4f4f4;
+}
+/* ----------------------------------Custom Selection---------------------------------- */
+::-moz-selection { /* Code for Firefox */
+    color: red;
+    background: yellow;
+  }
+  
+  ::selection {
+    color: var(--second-color);
+    background: var(--main-color);
+  }
+

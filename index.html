@@ -5,159 +5,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html, Css And Js</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <div class="container">
-        <h1>Welcome Here</h1>
-        <p class="description">Each day, a new module will become unlocked for you to explore. To get started, simply click on the module
-            that is currently available. Take your time to thoroughly absorb the content, engage in practice exercises,
-            and
-            explore examples. When you feel confident in your mastery of the material, you can initiate the quiz. Enjoy your learning journey!
-        </p>
-        <p class="notice">
-            First you have to download the vsCode.To Download Vscode <a href="https://code.visualstudio.com/download">Click me</a>. Next you have install live server extension in your vs code. to install this extension <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Follow Me</a>
-        </p>
-        <p class="notice">To Learn these topics you can refer <a href="https://wildlearner.com/learn/course/html/">wildlearner</a>, <a href="https://www.programiz.com/html">programiz</a>, and <a href="https://www.w3schools.com/html/default.asp">w3schools</a></p>
-
-        <div class="result">
-            <h1>Module Results</h1>
-            <table>
-                <tr>
-                    <th>Student Name</th>
-                    <th>Results</th>
-                </tr>
-                <tr>
-                    <td>Abdul Rahim</td>
-                    <td>
-                        <table class="inner-table">
-                            <tr>
-                                <th>Quiz</th>
-                                <th>Marks (%)</th>
-                            </tr>
-                            <tr>
-                                <td>Module 1</td>
-                                <td>68%</td>
-                            </tr>
-                            <!-- <tr>
-                                <td>Test 2</td>
-                                <td>90%</td>
-                            </tr> -->
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Ali Hasnain</td>
-                    <td>
-                        <table class="inner-table">
-                            <tr>
-                                <th>Quiz</th>
-                                <th>Marks (%)</th>
-                            </tr>
-                            <tr>
-                                <td>Module 1</td>
-                                <td>Not Attempted</td>
-                            </tr>
-                            <!-- <tr>
-                                <td>Test 2</td>
-                                <td>88%</td>
-                            </tr> -->
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Tehzeeb Hassan</td>
-                    <td>
-                        <table class="inner-table">
-                            <tr>
-                                <th>Quiz</th>
-                                <th>Marks (%)</th>
-                            </tr>
-                            <tr>
-                                <td>Module 1</td>
-                                <td>68%</td>
-                            </tr>
-                            <!-- <tr>
-                                <td>Test 2</td>
-                                <td>85%</td>
-                            </tr> -->
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        </div>
-<!-- -----------------------------------Assignmets----------------------------------- -->
-        <div class="Assigment">
-            <h4>Assignment</h4>
-            <p>You have to use the tags in module 1 and upload the picture of your code in vscode and the output on the browser.</p>
-            <p class="notice">When select the file then click on upload button and wait for confirmation-message</p>
-            <!-- <a href="style.css" download class="button">Download</a> -->
-            
-            <button onclick="openGmail('cholyleecho@gmail.com')" class="button">Compose Email</button>
-        </div>
-<!-- -----------------------------------modules----------------------------------- -->
-
-        <div class="modules">
-            <div class="box">
-                <h2 class="heading">Module - 1</h2>
-                <p class="sub-heading">Content of the Day</p>
-                <ul>
-                    <li>What is Html?</li>
-                    <li>A brief history of different versions of html</li>
-                    <li>How to write tags.(tag structure)</li>
-                    <li>Structure of Webpage</li>
-                    <li>How to write comments and why we should write comments in code?</li>
-                    <li>Elements Vs Tags</li>
-                    <li>Headings & paragraph</li>
-                    <li>Heading Importance</li>
-                    <li>What is <code>&lt;hr&gt;</code> and <code>&lt;br&gt;</code></li>
-                    <ul>
-                        <li><code>&lt;b&gt;</code></li>
-                        <li><code>&lt;i&gt;</code></li>
-                        <li><code>&lt;u&gt;</code></li>
-                        <li><code>&lt;pre&gt;</code></li>
-                        <li><code>&lt;abbr&gt;</code></li>
-                        <li><code>&lt;em&gt;</code></li>
-                        <li><code>&lt;mark&gt;</code></li>
-                        <li><code>&lt;sub&gt;</code></li>
-                        <li><code>&lt;sup&gt;</code></li>
-                        <li><code>&lt;strong&gt;</code></li>
-                        <li><code>&lt;del&gt;</code></li>
-                        <li><code>&lt;ins&gt;</code></li>
-                    </ul>
-                </ul><br>
-                <a  class="btn expire" id="myButton" aria-disabled="true">Go to Quiz</a>
+        <header class="header">
+            <a href="" class="logo">HCJ</a>
+            <!-- <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label> -->
+            <!-- <ul class="menu">
+                <li><a href="#work">Our Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul> -->
+        </header>
+        <div class="hero">
+            <div class="left-hero">
+                <h1 class="hero-heading color">Learn HTML, CSS and JavaScript</h1>
+                <p class="hero-paragraph color">Each day, a new module will become unlocked for you to explore. To get
+                    started, simply click on the module that is currently available. Take your time to thoroughly absorb
+                    the content, engage in practice exercises, and explore examples. When you feel confident in your
+                    mastery of the material, you can initiate the quiz. Enjoy your learning journey!</p>
             </div>
-            <div class="box" id="myElement" >
-                <div >
-                    <h2 class="heading">Module - 2</h2>
-                    <p class="sub-heading">Content of the day.</p>
-                    <ul>
-                        <li>What are attributes</li>
-                        <li>Where to write Attributes in html tags.</li>
-                        <li>Explore some Attributes for html tags.</li>
-                        <li>Understading of some major used attributes</li>
-                        <ul>
-                            <li>title</li>
-                            <li>class</li>
-                            <li>id</li>
-                            <li>style</li>
-                        </ul>
-                        <li>In style attribute must know about color, background-color, font-size and font-weight.</li>
-                        <li>When to use id and when to use class</li>
-                        <li>Practise in Vscode</li>
-                    </ul><br>
-                    <a href="/choly/module-2-quiz/index.html" class="btn" id="myButton">Go to Quiz</a>
+            <div class="right-hero">
+                <img class="hero-image" src="/Wavy_Tech-29_Single-03.jpg" alt="">
+            </div>
+        </div>
+        <div class="tabed">
+            <p class="notice">
+                First you have to download the vsCode.To Download Vscode <a
+                    href="https://code.visualstudio.com/download">Click me</a>. Next you have install live server
+                extension in your vs code. to install this extension <a
+                    href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Follow Me</a> <br>
+                To Learn these topics you can refer <a
+                    href="https://wildlearner.com/learn/course/html/">wildlearner</a>, <a
+                    href="https://www.programiz.com/html">programiz</a>, and <a
+                    href="https://www.w3schools.com/html/default.asp">w3schools</a>
+            </p>
+
+            <div class="tabs">
+                <button class="tablinks active" onclick="showTabs('Modules')">Modules</button>
+                <button class="tablinks" onclick="showTabs('Assignments')">Assignments</button>
+                <button class="tablinks" onclick="showTabs('Result')">Result</button>
+            </div>
+            <!----------------------------------------------- modules ----------------------------------------------->
+            <div id="Modules" class="tabcontent active">
+                <div class="grid">
+                    <div class="module color">
+                        <h2 class="heading">Module - 1</h2>
+                        <p class="sub-heading">Content of the Day</p>
+                        <a href="/docs/html-1.pdf" download class="btn"><i class="ri-download-line"></i>Download
+                            Content</a>
+                            <br><br><br>
+                        <a class="btn expire" id="myButton" aria-disabled="true">Go to Quiz</a>
+                    </div>
+                    <div class="module color">
+                        <div id="hiddenContent">
+                            <h2 class="heading">Module - 2</h2>
+                            <p class="sub-heading">Content of the day.</p>
+                            <a href="/docs/Attributes.pdf" download class="btn"><i class="ri-download-line"></i>Download
+                            Content</a>
+                            <br><br><br>
+                            <a href="/choly/module-2-quiz/index.html" class="btn" id="myButton">Go to Quiz</a>
+                        </div><br>
+                    </div>
+                    <div class="module color">
+                        <div id="hiddenContent">
+                            <h2 class="heading">Module - 3</h2>
+                            <p class="sub-heading">Content of the day.</p>
+                            <a href="/docs/Hyperlink.pdf" download class="btn"><i class="ri-download-line"></i>Download
+                            Content</a>
+                            <br><br><br>
+                            <a href="/choly/Module-3-quiz/index.html" class="btn" id="myButton">Go to Quiz</a>
+                        </div><br>
+                    </div>
                 </div>
-
-                
             </div>
-            
+            <!----------------------------------------------- assignments ----------------------------------------------->
+
+            <div id="Assignments" class="tabcontent">
+                <p class="color">First, download the assignment, read, and comprehend the requirements. Once you have
+                    completed it, simply capture a screenshot of the code in Visual Studio Code and the corresponding
+                    output in the browser.</p>
+                <div class="assignment-grid">
+                    <!-- Assignment modal -->
+                    <div class="assignment-modal">
+                        <h4 class="color">Module No.1 Assignment</h4>
+                        <a href="" download class="btn"><i class="ri-download-line"></i>Download
+                            Assignment</a><br>
+                        <button onclick="openGmail('cholyleecho@gmail.com')" class="btn"><i
+                                class="ri-upload-line"></i>Upload Assignment</button>
+                    </div>
+                    <div class="assignment-modal">
+                        <h4 class="color">Module No.2 Assignment</h4>
+                        <a href="/docs/assignment-2.html" class="btn"><i class="ri-download-line"></i>Download
+                            Assignment</a><br>
+                        <button onclick="openGmail('cholyleecho@gmail.com')" class="btn"><i
+                                class="ri-upload-line"></i>Upload Assignment</button>
+                    </div>
+                </div>
+            </div>
+            <!----------------------------------------------- Results ----------------------------------------------->
+
+            <div id="Result" class="tabcontent">
+                <div class="result">
+                    <h2 class="color" style="text-align: center;">Module Results</h2>
+                    <table>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Results</th>
+                        </tr>
+                        <tr>
+                            <td>Abdul Rahim</td>
+                            <td>
+                                <table class="inner-table">
+                                    <tr>
+                                        <th>Quiz</th>
+                                        <th>Marks (%)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Module 1</td>
+                                        <td>68%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Module 2</td>
+                                        <td>86.67%</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ali Hasnain</td>
+                            <td>
+                                <table class="inner-table">
+                                    <tr>
+                                        <th>Quiz</th>
+                                        <th>Marks (%)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Module 1</td>
+                                        <td>Not Attempted</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Module 2</td>
+                                        <td>Not Attempted</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tehzeeb Hassan</td>
+                            <td>
+                                <table class="inner-table">
+                                    <tr>
+                                        <th>Quiz</th>
+                                        <th>Marks (%)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Module 1</td>
+                                        <td>68%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Module 1</td>
+                                        <td>53.33%</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
+        <footer>
+            DESIGNED AND DEVELOPED BY ZAIN ALI
+        </footer>
     </div>
-    <script src="https://static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
     <script src="script.js"></script>
 </body>
 
