@@ -76,7 +76,10 @@ a {
     color: white;
 }
 
-
+.btn a{
+    text-decoration: none;
+    color: white;
+}
 /* ----------------------------------------HERO SECTION------------------------------------ */
 .hero {
     display: flex;
